@@ -1,0 +1,53 @@
+# pubspec.yaml
+
+name: wink_rider_app
+description: Application Livreur pour WINK EXPRESS (Migration Flutter).
+# La version et les configurations d'environnement peuvent varier
+version: 1.0.0
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # HTTP Client pour les appels REST à l'API Node.js/Express
+  dio: ^5.5.0
+  
+  # Gestion de l'état (facile à démarrer)
+  provider: ^6.0.5
+
+  # Gestion de l'authentification et du stockage local (token/user info)
+  shared_preferences: ^2.2.3
+
+  # Communication WebSocket pour le chat/notifications en temps réel
+  web_socket_channel: ^3.0.0
+
+  # Formatage et manipulation des dates
+  intl: ^0.20.2
+  
+  # Notifications locales (pour imiter le son/badge du PWA actuel)
+  flutter_local_notifications: ^19.5.0
+
+  # Icônes (peut être optionnel si vous utilisez des icônes custom)
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+# Configuration spécifique à Flutter
+flutter:
+  uses-material-design: true
+  
+  # Assets (ajoutez si vous avez des images ou polices à inclure, comme le logo)
+
+   
+    
+    
+  # Fonts (si vous utilisez des polices personnalisées)
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
